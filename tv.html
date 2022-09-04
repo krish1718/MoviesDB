@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movies DB</title>
+  <script src="APIKEY.js"></script>
+  <link rel="icon" href="/images/favicon.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/movies.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="main-text" href="index.html">Movies DB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="tv.html">TV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="people.html">People</a>
+          </li>
+        </ul>
+        <form class="d-flex" id="form" role="search">
+          <input class="form-control me-2" id="search" type="search" placeholder="Search" aria-button="Search">
+          <button class="btn btn-outline-success" id="search-btn" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="buttons">
+    <button id="day" type="button" class="btn btn-outline-info">Trending: Today</button>
+    <button id="week" type="button" class="btn btn-outline-info">Trending: This week</button>
+  </div>
+
+  <div class="populate">
+
+  </div>
+
+  <!-- Button trigger modal -->
+  <button type="button" id="popup-btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-main">
+
+          <div class="modal-img">
+
+          </div>
+          <div class="ratings-text">
+            <div class="modal-ratings">
+
+            </div>
+            <div class="modal-seasons">
+
+            </div>
+            <div class="modal-episodes">
+
+            </div>
+            <div class="modal-body" id="modal-body">
+              ...
+            </div>
+            <div class="modal-link">
+
+            </div>
+          </div>
+        </div>
+        <p class="castText"></p>
+        <div class="allCast">
+          <div class="cast">
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="previous" type="button" class="btn btn-outline-info">Previous</button>
+    <button id="next" type="button" class="btn btn-outline-info">Next</button>
+  </div>
+
+
+  <script src="js/tv.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

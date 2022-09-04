@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #00203FFF;
+}
+
+.buttons {
+    background-color: #00203FFF;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 20px;
+}
+
+.btn-active {
+    background-color: #0dcaf0;
+    color: black;
+}
+
+.search-active {
+    background-color: #198754;
+    color: white;
+}
+
+#main-text {
+    font-family: 'Playfair Display', serif;
+    margin: 0px 20px;
+}
+
+.nav-link {
+    margin: 0px 5px;
+}
+
+.populate,
+.dump {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background-color: #00203FFF;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 20px;
+    margin: 37px;
+    background-color: #ADEFD1FF;
+    cursor: pointer;
+}
+
+.card img {
+    border-radius: 20px;
+    border: 3px solid #00203FFF;
+    height: 383px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+#title {
+    font-weight: 600;
+}
+
+#rating {
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+#popup-btn {
+    display: none;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* 
+.modal {
+    top: 40%;
+} */
+
+.modal-img img {
+    width: 120px;
+    margin: 10px 0px;
+    margin-left: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.modal-ratings,
+.modal-runtime,
+.modal-seasons,
+.modal-episodes,
+.modal-known-for {
+    margin-left: 18px;
+    font-weight: 600;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-link {
+    cursor: pointer;
+}
+
+.modal-main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.allCast {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.allCast img {
+    width: 75px;
+    border-radius: 10px;
+}
+
+.allCast h5 {
+    font-size: 13px;
+    width: 70px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.castText {
+    font-size: 19px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+#actor_name,
+#overview {
+    font-weight: 600;
+}
